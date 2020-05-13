@@ -14,11 +14,7 @@ import {TokenInterceptor} from "./shared/classes/token.interceptor";
 
 @NgModule({
   declarations: [
-    AppComponent,
-    LoginPageComponent,
-    AuthLayoutComponent,
-    SiteLayoutComponent,
-    RegisterPageComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
