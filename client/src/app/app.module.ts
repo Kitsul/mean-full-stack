@@ -14,7 +14,11 @@ import {TokenInterceptor} from "./shared/classes/token.interceptor";
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoginPageComponent,
+    AuthLayoutComponent,
+    SiteLayoutComponent,
+    RegisterPageComponent
   ],
   imports: [
     BrowserModule,
@@ -22,7 +26,6 @@ import {TokenInterceptor} from "./shared/classes/token.interceptor";
     ReactiveFormsModule,
     FormsModule,
     HttpClientModule
-
   ],
   providers: [{
     provide: HTTP_INTERCEPTORS,
