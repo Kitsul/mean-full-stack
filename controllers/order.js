@@ -1,16 +1,15 @@
-const Order = require('../models/Order')
+const Order = require('../models/Oreder')
 const errorHandler = require('../utils/errorHandler')
 
-// (get) localhost:5000/api/order?offset=2&limit=5
+// (GET) /api/order?offset=2&limit=5
 module.exports.getAll = async function(req, res) {
   const query = {
     user: req.user.id
   }
 
-  // Дата старта
   if (req.query.start) {
     query.date = {
-      // Больше или равно
+      // >=
       $gte: req.query.start
     }
   }
