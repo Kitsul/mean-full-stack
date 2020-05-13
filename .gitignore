@@ -1,2 +1,5 @@
 .idea
 node_modules
+config/keys.dev.js
+uploads
+client/etc

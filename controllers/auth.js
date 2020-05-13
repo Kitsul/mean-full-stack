@@ -7,7 +7,6 @@ const errorHandler = require('../utils/errorHandler')
 
 module.exports.login = async function(req, res) {
   const candidate = await User.findOne({email: req.body.email})
-
   if (candidate) {
     // Проверка пароля, пользователь существует
     const passwordResult = bcrypt.compareSync(req.body.password, candidate.password)
